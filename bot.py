@@ -6,8 +6,8 @@ from groq import Groq
 from datetime import datetime
 
 # ========== НАСТРОЙКИ ==========
-TELEGRAM_TOKEN = "ВАШ_ТОКЕН_ОТ_BOTFATHER"
-GROQ_API_KEY = "ВАШ_КЛЮЧ_GROQ"
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 # ================================
 
 logging.basicConfig(level=logging.INFO)
